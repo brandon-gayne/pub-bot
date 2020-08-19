@@ -36,8 +36,8 @@ async def on_message(message):
     else:
         if "publix" in message.content.lower():
             await message.channel.send(random.choice(publix_quotes))
-        if "xi|duq" in message.content.lower() or "xilduq" in message.content.lower():
-            await message.channel.send(random.choice(evil_publix_quotes))
+        if "xi|duq" in message.content.lower() or "xilduq" in message.content.lower():  #double if is intentional
+            await message.channel.send(random.choice(evil_publix_quotes))               #apparently it's funnier this way
         else:
             if message.content.startswith("!tendies"):
                 r = requests.get("http://arepublixchickentendersubsonsale.com")
