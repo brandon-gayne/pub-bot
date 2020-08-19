@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 from discord.ext import commands
 
-TOKEN = "NzIwMDg2NDc2MjE3NTE2MDQy.XuA3AQ.aE8-GLiC8NsmfR9CGyilwKWQXjo"
+TOKEN = os.environ['DISCORD_SECRET']
 
 client = discord.Client()
 
