@@ -40,6 +40,7 @@ async def on_message(message):
             await message.channel.send(random.choice(evil_publix_quotes))               #apparently it's funnier this way
         if "he12.png" in message.content.lower():
             await message.channe.send("NOT TODAY, HORACE")
+            print("AM I HERE?")
         else:
             if message.content.startswith("!tendies"):
                 r = requests.get("http://arepublixchickentendersubsonsale.com")
